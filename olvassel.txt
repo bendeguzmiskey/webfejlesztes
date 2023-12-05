@@ -1,0 +1,9 @@
+1. Az olda készítője: Miskey Bendegúz
+2. Github pages címe:
+3. A weboldalam témája az Isle of man TT nevezetű motoros verseny. Érdekes információkon kívül tartalmaz az oldalam még egy kvízt és egy kérdőívet is.
+4. A js kódom a harmadik.html nevezetű oldalon található. A weboldalon a teszt nevezetű navigációs fül visz oda. Ez egy hét kérdéses teszt aminek az alapja a weboldalon olvasott információ. Mindenhol három válasz lehetőség közül tudunk választani, végül be tudjuk adni a válaszainkat. A script össze adja a jó válaszainkat és megjeleníti az oldalon. Ezen kívül a jó válaszok esetén zöldre színezi a válaszunkat. Rossz válasz esetén a válaszunkat pirosra színezi és a jó választ pedig kiszínezi zöldre.
+5. Egyedi fontom: Hedvig Letters Serif, https://fonts.google.com/specimen/Hedvig+Letters+Serif, mindenhol megtalálható a bodyban.
+6.Források:
+-az index.html képeinek forrása:https://www.motorcyclistonline.com/10-incredible-photos-from-isle-man/
+-az index.html szövegének forrása: https://hu.wikipedia.org/wiki/Isle_of_Man_TT
+-a masodik.html képének és szövegének forrása: https://www.motorage.hu/2019/05/18/isle-of-man-tt-a-kezdet/

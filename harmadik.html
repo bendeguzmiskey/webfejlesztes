@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miskey Bendegúz">
+    <meta name="description" content="Az Isle of man TT">
+    <meta name="copyright" content="Csak tanulmányi célokra">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Hedvig+Letters+Serif">
+    <link rel="icon"  href="kepek/favicon.png">
+    <title>Isle of Man TT</title>
+    <script src="teszt.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Isle of Man TT</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">A verseny</a></li>
+            <li><a href="masodik.html">A kezdet</a></li>
+            <li><a class="active" href="#">Teszt</a></li>
+            <li><a href="negyedik.html">Motorsport kérdőív</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <article>
+            <h2>Isle of man TT teszt</h2>
+            <h3>Kérdések</h3>
+            <hr>
+
+            <p>1- Mikor rendezték meg először az Isle man TT-t?</p>
+            <label><input type="radio" name="válasz1" value="hibas"><span>1906</span></label>
+            <label><input type="radio" name="válasz1" value="helyes"><span>1907</span></label>
+            <label><input type="radio" name="válasz1" value="hibas"><span>1916</span></label>
+            <hr>
+
+            <p>2- Mivel versenyeztek először a pályán?</p>
+            <label><input type="radio" name="válasz2" value="helyes"><span>Autóval</span></label>
+            <label><input type="radio" name="válasz2" value="hibas"><span>Motorkerékpárral</span></label>
+            <label><input type="radio" name="válasz2" value="hibas"><span>Lóval</span></label>
+            <hr>
+
+            <p>3- Hogy hívták a magyar versenyzőt aki 1972-ben részt vett a versenyen?</p>
+            <label><input type="radio" name="válasz3" value="hibas"><span>Szabó László</span></label>
+            <label><input type="radio" name="válasz3" value="hibas"><span>Szabó László Ifj.</span></label>
+            <label><input type="radio" name="válasz3" value="helyes"><span>Szabó II. László</span></label>
+            <hr>
+
+            <p>4- Ki nyerte meg legtöbbször a TT-t?</p>
+            <label><input type="radio" name="válasz4" value="hibas"><span>Peter Hickman</span></label>
+            <label><input type="radio" name="válasz4" value="helyes"><span>Joey Dunlop</span></label>
+            <label><input type="radio" name="válasz4" value="hibas"><span>Guy Martin</span></label>
+            <hr>
+
+            <p>5- Milyen hosszú a ma használt versenypálya?</p>
+            <label><input type="radio" name="válasz5" value="hibas"><span>25,51 mérföld</span></label>
+            <label><input type="radio" name="válasz5" value="helyes"><span>60,725 km</span></label>
+            <label><input type="radio" name="válasz5" value="hibas"><span>60,725 mérföld</span></label>
+            <hr>
+
+            <p>Milyen autóval vágott neki a magyar képviselet 1972-ben az útnak?</p>
+            <label><input type="radio" name="válasz6" value="hibas"><span>Lada 1200</span></label>
+            <label><input type="radio" name="válasz6" value="helyes"><span>Barkas</span></label>
+            <label><input type="radio" name="válasz6" value="hibas"><span>Opel Kadett</span></label>
+            <hr>
+            
+            <p>7- Hány nap áll rendelkezésre megfutni a legjobb időt az időmérő edzéseken?</p>
+            <label><input type="radio" name="válasz7" value="hibas"><span>3</span></label>
+            <label><input type="radio" name="válasz7" value="hibas"><span>2</span></label>
+            <label><input type="radio" name="válasz7" value="helyes"><span>5</span></label>
+            <hr>
+
+            <button class="submit" onclick="return eredmenyek();" type="submit">
+            Elküldöm a válaszaimat</button>
+
+        <h2>Eredmények</h2>
+        <p id="eredmenyek"></p>
+        </article>
+    </div>
+
+    <footer>
+        Informatika és IT architektúra alapjai - Webfejlesztés beadandó, Miskey Bendegúz EW7AI2
+    </footer>
+
+</body>
+
+</HTML>

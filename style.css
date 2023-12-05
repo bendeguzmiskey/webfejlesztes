@@ -1,0 +1,151 @@
+/*====ALTALANOS====*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #fbeec1;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Hedvig Letters Serif', 'Times New Roman';
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container>* {
+	height: fit-content;
+    margin: 1%;
+}
+
+/*====TAGEK====*/
+
+header {
+    padding: 2px;
+    margin: 0px;
+    background-color: #659dbd;
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+article {
+    background-color: #daad86;
+    padding: 8px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+aside {
+    background-color: #bc986a;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 15px;
+    align-items: center;
+}
+
+footer {
+    background-color: #8d8741;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.1em;
+    padding: 15px;
+}
+
+/*====MENU====*/
+
+nav ul {
+    display: flex;
+	flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    padding: 5px;
+}
+
+nav li a {
+    display: block;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    background-color: #8d8741;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    background-color: #bc986a;
+}
+
+nav li a:hover {
+    background-color: #daad86;
+}
+.galleria {
+    align-items: center;
+ }
+
+/*====OSZTALYOK====*/
+
+img.picture {
+    width: 400px;
+    height: auto;
+    padding: 5%;
+}
+
+h2.cikkcim {
+    display: table;
+    text-align: left;
+}
+
+p.tartalom {
+    padding: 3px;
+    text-indent: 1.1em;
+    text-align: justify;
+}
+p.alair {
+    text-align: center;
+}
+
+/*Reszponzivitás*/
+@media all and (min-width: 600px) {
+    /*tablet*/
+    div.container{
+        flex-direction: row;
+    }
+    nav ul{
+        flex-direction: row;
+    }
+    nav ul li{
+        flex-basis: 25%;
+    }
+}
+
+@media all and (min-width: 768px) {
+    /*számítógép*/
+    article {
+        flex-basis: 70%;
+    }
+    
+    aside {
+        flex-basis: 20%;
+    }
+}
+
+label.error {
+color: #FB3A3A;}

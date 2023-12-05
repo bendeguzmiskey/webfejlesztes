@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miskey Bendegúz">
+    <meta name="description" content="Az Isle of man TT">
+    <meta name="copyright" content="Csak tanulmányi célokra">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Hedvig+Letters+Serif">
+    <link rel="icon"  href="kepek/favicon.png">
+    <title>Isle of Man TT</title>
+<script src="jquery-3.7.1.min.js"></script>
+<script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#myform").validate({
+            rules: {
+                nev: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+                hanydb: "required",
+                freq: "required",
+                telefonszam: "required",
+            },
+            messages: {
+                nev: "<br> Kérem írja be a neved!",
+                email: "<br> Kérem valós email címet adjon meg!",
+                hanydb: "<br> Adja meg hány db versenyen vett részt!",
+                freq: "<br> Kérem adja meg milyen gyakran szokott motorsportot nézni!",
+                telefonszam: "<br> Kérem adja meg a telefonszámát!"
+            },
+
+        });
+    });
+</script>
+</head>
+<body>
+
+    <header>
+        <h1>Isle of Man TT</h1>
+    </header>
+    <nav>
+            <ul>
+                <li><a href="index.html">A verseny</a></li>
+                <li><a href="masodik.html">A kezdet</a></li>
+                <li><a href="harmadik.html">Teszt</a></li>
+                <li><a class="active" href="#">Motorsport kérdőív</a></li>
+            </ul>
+        </nav>
+    <div class="container">
+        
+        <article>
+            <form id="myform" novalidate>
+            <h2 class="cikkcim">Motorsport kérdőív</h2>
+
+            <h3>Személyes adatok</h3>
+            <p>
+                <label>
+                    A teljes neved:<input type="text" name="nev" size="50" maxlength="50">
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    E-mail címed:<input type="text" name="email" size="50" maxlength="50" value="@">
+                </label>
+            </p>
+            <label>Telefonszám: 
+            <input type="tel" name="telefonszam" placeholder="+36" pattern="[+36][0-9]{9}">
+            </label>
+            <p>
+                <label>
+                    <span>Kor:</span>
+                        <select name="kor" size="1">
+                            <option value="-----"> Kérem válasszon </option>
+                            <option value=" -15"> &nbsp;&nbsp;&nbsp;-15 </option>
+                            <option value="15-20"> 15-20 </option>
+                            <option value="20-25"> 20-25 </option>
+                            <option value="25-30"> 25-30 </option>
+                            <option value="30-35"> 30-35 </option>
+                            <option value="35-40"> 35-40 </option>
+                            <option value="40-45"> 40-45 </option>
+                            <option value="45-50"> 45-50 </option>
+                            <option value="50-55"> 50-55 </option>
+                            <option value="55-60"> 55-60 </option>
+                            <option value="60- "> 60-&nbsp;&nbsp; </option>
+                    </select>
+                </label>
+            </p>
+
+            <p>
+                Neme:
+                <label>
+                    <input type="radio" name="nem" value="férfi">
+                    férfi
+                </label>
+                <label>
+                    <input type="radio" name="nem" value="nő">
+                    nő
+                </label>
+            </p>
+            <hr>
+        
+
+            <h3>Élő rendezvények
+            </h3>
+            <p>
+                Vett már részt előben bármilyen motorsport rendezvényen?<br>
+                <label>
+                    <input type="radio"  name="eldontendo" value="Igen">
+                    Igen
+                </label>
+                <label>
+                    <input type="radio"  name="eldontendo" value="Nem">
+                    Nem
+                </label>
+            </p>
+            <p>
+                <label>
+                    Ha igen akkor hány darabon?<br>
+                    <input name="hanydb" type="number" max="200" min="1" step="1">
+                </label>
+            </p>
+            <hr>
+
+        
+            <h3>Tévézési szokások</h3>         
+            <label>
+                Milyen gyakran néz bármilyen motorsportot?<br>
+                <select name="freq" size="6">
+                    <option value="0"> szinte soha </option>
+                    <option value="1"> néha-néha </option>
+                    <option value="2"> alkalmanként </option>
+                    <option value="3"> rendszeressen </option>
+                    <option value="4"> gyakran </option>
+                    <option value="5"> naponta - akár többször is&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </option>
+                </select>
+            </label>
+
+        
+            <h4>Milyen motorsportot szokott nézni?</h4><br>
+            <label>
+                <input type="checkbox" name="sport1" value="ON">
+                Nem szoktam nézni<br>
+            </label>
+            <label>
+                <input type="checkbox" name="sport2" value="ON">
+                Formula 1<br>
+            </label>
+            <label>
+                <input type="checkbox" name="sport3" value="ON">
+                Formula 2<br>
+            </label>
+            <label>
+                <input type="checkbox" name="sport4" value="ON">
+                Formula 3<br>
+            </label>
+            <label>
+                <input type="checkbox" name="sport5" value="ON">
+                Moto GP<br>
+            </label>
+            <label>
+                <input type="checkbox" name="sport6" value="ON">
+                Nascar<br>
+            </label>
+            <label>
+                <input type="checkbox" name="sport7" value="ON">
+                Rally<br>
+            </label>
+            <label>
+                <input type="checkbox" name="sport8" value="ON">
+                Formula E<br>
+            </label>
+            <hr>
+                
+           
+        
+        
+        
+            <p>
+                <label>
+                    <input type="submit" value="Elküldés" name="kuld">
+                </label>
+                <label>
+                    <input type="reset" value="Alaphelyzet" name="alap">
+                </label>
+            </p>
+        </form>
+        </article>
+        
+    </div>
+
+    <footer>
+        Informatika és IT architektúra alapjai - Webfejlesztés beadandó, Miskey Bendegúz EW7AI2
+    </footer>
+
+</body>
+
+</HTML>
